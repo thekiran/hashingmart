@@ -27,23 +27,46 @@
   <title>
     Save Time. Zero Stress | Hashingmart.com
   </title>
-  <!-- Ion icons -->
-  <link href="css/ionicons.min.css" rel="stylesheet">
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bundles.css">
 
+
+  <!-- Ion icons -->
+  <!-- <link href="css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- Font awesome -->
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  
   <!-- JQuery library -->
-  <script type="text/javascript" src="/js/jquery.js"></script>
+  <!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
   
   <!-- TinyMce Editor Script -->
-  <script src="js/tinymce.min.js" referrerpolicy="origin"></script>
-  <script>
+  <!-- <script src="js/tinymce.min.js" referrerpolicy="origin"></script> -->
+ 
+ <!-- <script>
     tinymce.init({
       selector: "#description",
     });
-  </script>
+  </script> -->
+
+  <!-- Preconnect -->
+
+  <link rel="preconnect" href="https//hashingmartimages.mo.cloudinary.net">
+  <link rel="preconnect" href="https://i5.walmartimages.com">
+
+  <link rel="preload" as="image" href="https://hashingmartimages.mo.cloudinary.net/site/slide-pet.webp">
+  <link rel="preload" as="image" href="https://i5.walmartimages.com/asr/6812b9e3-4b42-42ae-9bbc-2e400629a409.434f3ea781bc0736d7484b18ed3fe0d1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <link rel="preload" as="image" href="images/knp1.png">
+  <link rel="preload" as="image" href="images/2-medium.jpg">
+  
+
+  <img src="https://hashingmartimages.mo.cloudinary.net/site/slide-pet.webp" style="display: none;">
+  <img src="https://i5.walmartimages.com/asr/6812b9e3-4b42-42ae-9bbc-2e400629a409.434f3ea781bc0736d7484b18ed3fe0d1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" style="display: none;">
+  <img src="images/knp1.png" style="display: none;">
+  <img src="images/2-medium.jpg" style="display: none;">
+  
+  
+
 </head>
 
 <body>
@@ -196,7 +219,7 @@
       <!-- hero slider -->
       <div class="img-slider">
         <div class="slide active">
-          <img src="//hashingmartimages.mo.cloudinary.net/site/slide-pet.webp" alt="First slide">
+          <img src="https://hashingmartimages.mo.cloudinary.net/site/slide-pet.webp" alt="First slide">
           <div class="info switch">
             <h2>Daisy! Sure...</h2>
             <p>
@@ -221,7 +244,7 @@
         </div>
 
         <div class="slide">
-          <img src="//hashingmartimages.mo.cloudinary.net/site/slide-sports.jpeg" alt="Third slide">
+          <img class="lazy" data-src="//hashingmartimages.mo.cloudinary.net/site/slide-sports.jpeg" alt="Third slide">
           <div class="info white">
             <h2>Mats from $31</h2>
             <p>
@@ -234,7 +257,7 @@
         </div>
 
         <div class="slide">
-          <img src="images/console.jpg" alt="Fourth slide">
+          <img class="lazy" data-src="images/console.jpg" alt="Fourth slide">
           <div class="info">
             <h2>Gaming console</h2>
             <p style="width: 100%">
@@ -247,7 +270,7 @@
         </div>
 
         <div class="slide">
-          <img src="images/5-medium.jpg" alt="Fifth slide">
+          <img class="lazy" data-src="images/5-medium.jpg" alt="Fifth slide">
           <div class="info switch5">
             <h2>Office supplies</h2>
             <p>
@@ -273,7 +296,7 @@
   <section class="sfree">
     <div class="sfree-flex">
       <div class="sfree-flex-img">
-        <img src="//hashingmartimages.mo.cloudinary.net/site/visa.webp" alt="Credit card">
+        <img class="lazy" data-src="//hashingmartimages.mo.cloudinary.net/site/visa.webp" alt="Credit card">
       </div>
       <div class="sfree-flex-content">
         <h3>Free shipping on all orders</h3>
@@ -683,7 +706,7 @@
       <div class="infoUpdates">
         <div class="infoUpdates__detail">
           <a href="covid-19.html">
-            <img src="images/covid-19.jpg" height="222" width="395" alt="COVID-19 updates">
+            <img class="lazy" data-src="images/covid-19.jpg" height="222" width="395" alt="COVID-19 updates">
           </a>
           <div class="infoUpdates__detail-header">
             <h4>COVID-19</h4>
@@ -696,7 +719,7 @@
 
         <div class="infoUpdates__detail">
           <a href="estimated-delivery-dates.html">
-            <img src="images/card-shipping.jpg" height="222" width="395" alt="Shipping information">
+            <img class="lazy" data-src="images/card-shipping.jpg" height="222" width="395" alt="Shipping information">
           </a>
           <div class="infoUpdates__detail-header">
             <h4>Shipping on Hashingmart</h4>
@@ -709,7 +732,7 @@
 
         <div class="infoUpdates__detail">
           <a href="customer-service.html">
-            <img src="images/customer-support.jpg" height="222" width="395" alt="Customer service">
+            <img class="lazy" data-src="images/customer-support.jpg" height="222" width="395" alt="Customer service">
           </a>
           <div class="infoUpdates__detail-header">
             <h4>Customer service</h4>
@@ -733,7 +756,7 @@
   </div>
 </section>
 
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
         var slides = document.querySelectorAll('.slide');
         var btns = document.querySelectorAll('.btn');
         let currentSlide = 1;
@@ -785,9 +808,9 @@
           repeater();
         }
         repeat();
-      </script>
-      <script type="text/javascript" src="js/swiper.js"></script>
-      <script src="js/script.js"></script>
+      </script> -->
+      <!-- <script type="text/javascript" src="js/swiper.js"></script> -->
+      <!-- <script src="js/script.js"></script> -->
       
 <section class="footer">
   <div class="container wrapper">
@@ -812,7 +835,7 @@
     </footer>
   </div>
 </section>
-
-</body>
+<script src="js/bundles.js"></script>
 <script src="js/main.js"></script>
+</body>
 </html>
